@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CodeTyper</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="" alt="">
+        <h1>CodeTyper</h1>
+        <p class="subtitle">اختبر سرعتك في كتابة الاكواد </p>
+    </header>
+
+    <section>
+        <select id="lango">
+            <option value="C++" class="s0">C++</option>
+            <option value="Python" class="s0">Python</option>
+            <option value="JavaScript" class="s0">JavaScript</option>
+        </select>
+        <label for="time" id="time">المدة الزمنية: </label>
+        <select>
+            <option value="30sec" class="s0">30sec</option>
+            <option value="60sec" class="s0">60sec</option>
+        </select>
+        <button id="sound" class="sound" class="s0">
+            تعديل صوت الكيبورد
+        </button>
+    </section>
+
+    <main  dir="ltr">
+        <div class="head">
+            <div class="head">
+                <span class="close"></span>
+                <span class="minimize"></span>
+                <span class="maximize"></span>
+            </div>
+            <div class="tab" id="tab"> main.cpp</div>
+        </div>
+        <div class="code" id="code"></div>
+
+        <input type="text" id="code2" class="X" autofocus>
+        <div class="click" id="click">
+            اضغط هنا وابدأ الكتابة على الكيبورد
+        </div>
+    </main>
+
+    <footer class="aa">
+        <div class="top">
+        <div class="time2">
+            <span class="time3">الوقت المتبقي</span>
+            <span class="time4" id="timer-val">60</span>
+            <span class="time5">ثانية</span>
+        </div>
+
+        <div class="fast">
+            <span class="fast2">السرعة (WPM)</span>
+            <span class="fast3" id="wpm-val">0</span>
+            <span class="fast4">كلمة/دقيقة</span>
+        </div>
+
+        <div class="Accuracy">
+            <span class="Accuracy2">الدقة (Accuracy)</span>
+            <span class="Accuracy3" id="accuracy-val">100</span>
+            <span class="Accuracy">%</span>
+        </div>
+        <button id="restart" class="restart">
+            إعادة البدء
+        </button>
+    </div>
+        <div class="button">
+            <span>alpha team</span> <br>
+            <span>تم التطوير بواسطة</span>
+            <p>mahmoud el taweel</p>
+            <p>asmaa sabry</p>
+            <p>nour</p>
+            <p>amr mohamed</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

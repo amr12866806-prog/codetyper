@@ -1,0 +1,197 @@
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+header {
+    background: linear-gradient(to right, rgb(39, 193, 199), rgb(0, 0, 0));
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header p {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
+
+section {
+    margin: 20px auto;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: rgb(39, 193, 199);
+    border-style: solid;
+    width: 70%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+
+}
+
+select {
+    border-radius: 10px;
+    border-color: rgb(39, 193, 199);
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px 50px;
+    margin: 5px;
+}
+
+.sound {
+    border-radius: 10px;
+    border-color: rgb(39, 193, 199);
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px 50px;
+}
+
+.s0 {
+    font-size: 20px;
+    color: rgb(39, 193, 199);
+}
+
+footer .button {
+    background: linear-gradient(to right, rgb(39, 193, 199), rgb(0, 0, 0));
+    bottom: 0;
+
+}
+
+footer div p {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 10px;
+    text-align: center;
+}
+
+.button {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    padding: 10px;
+}
+
+.button span {
+    font-size: 20px;
+}
+
+footer .top {
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(0, 114, 118);
+}
+.time2{
+font-size: 20px;
+}
+.Accuracy{
+font-size: 20px;
+}
+.fast{
+font-size: 20px;
+}
+.restart{
+    border-radius: 20px;
+    background-color: rgb(39, 193, 199);
+    font-size: 20px;
+}
+main {
+    
+    width: 70%;
+    margin: 20px auto;
+    border: 2px solid rgb(39, 193, 199);
+    border-radius: 10px;
+    background-color: rgb(32, 45, 57);
+
+}
+
+.head {
+    border: 5px solid rgb(39, 193, 199);
+    color: white;
+    background-color: rgb(39, 193, 199);
+}
+
+.code {
+    font-family: 'Consolas', 'Courier New', monospace;
+    /* خط برمجي احترافي */
+    font-size: 20px;
+    /* حجم خط واضح للكود */
+    padding: 20px;
+    line-height: 1.8;
+    /* تباعد مريح بين السطور */
+    white-space: pre-wrap;
+    /* مهمة جداً: بتحافظ على السطور الجديدة والمسافات في الكود */
+    min-height: 180px;
+    /* ارتفاع مناسب للصندوق */
+    color: white;
+}
+.X {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+}
+.click{
+    text-align: center;
+    color: rgb(39, 193, 199);
+}
+
+
+@media (max-width: 768px) {
+    section,
+    main {
+        width: 92%;
+    }
+
+    select,
+    .sound {
+        padding: 10px 16px;
+        font-size: 16px;
+    }
+
+    footer .top {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+    }
+}
+
+
+
+/*لسه معرفش دول*/
+
+
+/* تلوين الحرف الصحيح */
+.char.correct {
+    color: #4ade80; /* أخضر نيون */
+}
+/* تلوين الحرف الخطأ */
+.char.incorrect {
+    color: #ff4d4d; /* أحمر */
+    background-color: rgba(255, 77, 77, 0.25);
+    border-radius: 2px;
+}
+/* مؤشر الكتابة الوماض (Cursor) */
+.char.current {
+    border-left: 2px solid rgb(39, 193, 199);
+    animation: blink 0.9s infinite;
+}
+@keyframes blink {
+    0%, 100% { border-color: rgb(39, 193, 199); }
+    50% { border-color: transparent; }
+}
